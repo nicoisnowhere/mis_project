@@ -32,16 +32,47 @@
     <article class="container">
         <p>We would love to hear from you!</p>
         <form method="post" action="http://www.randyconnolly.com/tests/process.php">
-            <fieldset id="contact-info">
-                <legend>Customer contact information</legend>
-                <input name="email" type="email">
-                <input name="phone" type="tel">
-            </fieldset>
+
+<fieldset id="contact-info">
+    <legend>Customer contact information</legend>
+
+    <div>
+        <label for = "fname"> First name:</label>
+             <input type = "text" id = "contact-info" name = "fname" placeholder="Enter first name">
+                    </div>
+
+                     <div>
+        <label for = "lname"> Last name:</label>
+            <input type = "text" id = "contact-info" name = "lname" placeholder="Enter Last name">
+    </div>
+
+                <div>
+        <label for = "Email"> Email:</label>
+            <input type = "email" id = "contact-info" name = "Email" placeholder="p@gmail.com">
+   </div>
+
+    <div>
+        <label for = "phone"> Phone number:</label>
+            <input type = "tel" id = "contact-info" name = "phone" placeholder="xxx-xxx-xxxx ">
+    </div>
+
+<br>
+
+</fieldset>
+
             <fieldset id="more-info">
                 <legend>What would you like to say?</legend>
-                <input name="text" type="text">
+                <textarea id="info" name="more-info" rows="5" cols="33"></textarea>
 
+              
             </fieldset>
+
+            <br>
+
+            <div>
+             <input type = "submit">
+                </div>
+
         </form>
     </article>
     <footer class="card">
