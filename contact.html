@@ -55,17 +55,27 @@
         <label for = "phone"> Phone number:</label>
             <input type = "tel" id = "contact-info" name = "phone" placeholder="xxx-xxx-xxxx ">
     </div>
-
+    <div>
+      <input type="checkbox" id="consent" name="consent" value="True">
+      <label for="consent"> I want to receive alerts for deals and new products.</label>
+    </div>
 <br>
-
+    <fieldset id="product-info">
+        <p>What are you contacting us about?</p>
+        <div class="btn-group" role="group" aria-label="Reason for contact">
+            <input type="radio" class="btn-check" id="reason1" name="reason" value="Existing product">
+            <label class="btn btn-outline-primary" for="reason1">Existing product</label><br>
+            <input type="radio" class="btn-check" id="reason2" name="reason" value="New product request">
+            <label class="btn btn-outline-primary" for="reason2">New product request</label><br>
+            <input type="radio" class="btn-check" id="reason3" name="reason" value="Other reason">
+            <label class="btn btn-outline-primary" for="reason3">Other reason</label><br>
+        </div>
+    </fieldset><br>
 </fieldset>
-
-            <fieldset id="more-info">
-                <legend>What would you like to say?</legend>
-                <textarea id="info" name="more-info" rows="5" cols="33"></textarea>
-
-              
-            </fieldset>
+    <fieldset id="more-info">
+        <legend>What would you like to say?</legend>
+        <textarea id="info" name="more-info" rows="5" cols="33"></textarea>      
+    </fieldset>
 
             <br>
 
