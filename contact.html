@@ -30,53 +30,61 @@
         <a href="#" class="nav-link active" aria-current="page">Contact</a>
     </nav>
     <article class="container">
-        <p>We would love to hear from you!</p>
+        <h2>Contact and order</h2>
+        <p>Contact us here to begin a custom order. Please note that you can currently only order one size and type at a time, but you can order as many as you want!</p>
         <form method="post" action="http://www.randyconnolly.com/tests/process.php">
-
-<fieldset id="contact-info">
-    <legend>Customer contact information</legend>
-
-    <div>
-        <label for = "fname"> First name:</label>
-             <input type = "text" id = "contact-info" name = "fname" placeholder="Enter first name">
-                    </div>
-
-                     <div>
-        <label for = "lname"> Last name:</label>
-            <input type = "text" id = "contact-info" name = "lname" placeholder="Enter Last name">
-    </div>
-
-                <div>
-        <label for = "Email"> Email:</label>
-            <input type = "email" id = "contact-info" name = "Email" placeholder="p@gmail.com">
-   </div>
-
-    <div>
-        <label for = "phone"> Phone number:</label>
-            <input type = "tel" id = "contact-info" name = "phone" placeholder="xxx-xxx-xxxx ">
-    </div>
-
-<br>
-
-</fieldset>
-
+            <fieldset id="contact-info">
+                <legend>Customer contact information</legend>
+                <div class="mb-3">
+                    <label for="fname" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="contact-info" name="fname" placeholder="Enter first name">
+                </div>
+                <div class="mb-3">
+                    <label for="lname" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="contact-info" name="lname" placeholder="Enter Last name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">*Email</label>
+                    <input type="email" class="form-control" id="contact-info" name="email" placeholder="email@mail.com" required>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone number</label>
+                    <input type="tel" class="form-control" id="contact-info" name="phone" placeholder="xxx-xxx-xxxx">
+                    <div id="phoneHelp" class="form-text">We'll never share your phone number with anyone else.</div>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="consent" name="consent" value="True">
+                    <label for="consent" class="form-check-label"> I want to receive alerts for deals and new products.</label>
+                </div>
+                <p>* Required fields.</p>
+            </fieldset>
+            <fieldset id="order-info">
+                <legend>Order information</legend>
+                <p>If you do not wish to place an order now, skip this section and proceed to the notes and comments text box.</p>
+                <div class="btn-group" role="group" aria-label="Shirt type">
+                    <input type="radio" class="btn-check" id="type1" name="shirt_type" value="Sleevless">
+                    <label class="btn btn-outline-primary" for="type1">Sleevless</label><br>
+                    <input type="radio" class="btn-check" id="type2" name="shirt_type" value="Short sleeve">
+                    <label class="btn btn-outline-primary" for="type2">Short sleeve</label><br>
+                    <input type="radio" class="btn-check" id="type3" name="shirt_type" value="Long sleeve">
+                    <label class="btn btn-outline-primary" for="type3">Long sleeve</label><br>
+                </div>
+            </fieldset><br>
             <fieldset id="more-info">
                 <legend>What would you like to say?</legend>
-                <textarea id="info" name="more-info" rows="5" cols="33"></textarea>
-
-              
+                <textarea id="info" name="more-info" rows="5" cols="33"></textarea>      
             </fieldset>
-
             <br>
-
             <div>
-             <input type = "submit">
-                </div>
-
+                <input type = "submit">
+            </div>
         </form>
     </article>
-    <footer class="card">
-        <div class="card-body">Copyright 2026</div>
+    
+     <footer>
+     <span>Created by Nico Kelly, Geevan Kolacherril, Olamide Olaniyo, Yeimi Zapata</a> | <span class="far fa-copyright"></span> 2026 All rights reserved.</span>
     </footer>
+    
 </body>
 </html>
