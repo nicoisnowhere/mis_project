@@ -61,18 +61,32 @@
                     <input type="checkbox" class="form-check-input" id="consent" name="consent" value="True">
                     <label for="consent" class="form-check-label"> I want to receive alerts for deals and new products.</label>
                 </div>
-                <p>* Required fields.</p>
+                <p><strong>* The asterisk indicates required fields.</strong></p>
             </fieldset>
             <fieldset id="order-info">
                 <legend>Order information</legend>
                 <p>If you do not wish to place an order now, skip this section and proceed to the notes and comments text box.</p>
-                <div class="btn-group" role="group" aria-label="Shirt type">
+                <div aria-label="Shirt type">Shirt type</div>
+                <div class="btn-group" role="group" aria-labelledby="Shirt type">
                     <input type="radio" class="btn-check" id="type1" name="shirt_type" value="Sleevless">
-                    <label class="btn btn-outline-primary" for="type1">Sleevless</label><br>
+                    <label class="btn btn-outline-primary" for="type1">Sleeveless</label><br>
                     <input type="radio" class="btn-check" id="type2" name="shirt_type" value="Short sleeve">
                     <label class="btn btn-outline-primary" for="type2">Short sleeve</label><br>
                     <input type="radio" class="btn-check" id="type3" name="shirt_type" value="Long sleeve">
                     <label class="btn btn-outline-primary" for="type3">Long sleeve</label><br>
+                </div><br/>
+                <div aria-label="Shirt size">Shirt size</div>
+                <div class="btn-group" role="group" aria-labelledby="Shirt size">
+                    <input type="radio" class="btn-check" id="small" name="shirt_size" value="Small">
+                    <label class="btn btn-outline-primary" for="small">Small</label><br>
+                    <input type="radio" class="btn-check" id="medium" name="shirt_size" value="Medium">
+                    <label class="btn btn-outline-primary" for="medium">Medium</label><br>
+                    <input type="radio" class="btn-check" id="large" name="shirt_size" value="Large">
+                    <label class="btn btn-outline-primary" for="large">Large</label><br>
+                </div><br>
+                <div>
+                    <label for="shirt-color" class="form-label">Shirt color</label>
+                    <input type="color" id="shirt-color" name="color">
                 </div>
             </fieldset><br>
             <fieldset id="more-info">
@@ -81,7 +95,7 @@
             </fieldset>
             <br>
             <div>
-                <input type = "submit">
+                <input type="submit" class="btn btn-primary">
             </div>
         </form>
     </article>
