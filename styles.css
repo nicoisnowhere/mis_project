@@ -7,8 +7,9 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-
-
+article {
+  padding: 10px;
+}
 
 #contact-info{
   width: 100%;
@@ -33,4 +34,19 @@ header {
   background-position: center;
   padding: 60px 20px;
   color: black;
+}
+
+/* Collapsible style */
+.collapsible {
+  width: 100%;
+  text-align: left;
+  border-radius: 5px 5px 0 0;
+}
+.insideCollapse {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  padding: 0 8px;
+  background-color: lightsteelblue;
+  border-radius: 0 0 5px 5px;
 }
