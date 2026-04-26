@@ -27,7 +27,7 @@ header {
   float: right;
 }
 
-.active:after {
+.open:after {
   content: "\23F6";
 }
 
