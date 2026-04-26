@@ -25,7 +25,6 @@ header {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  padding: 0 8px;
-  background-color: lightsteelblue;
+  background-color: #eaf0f7;
   border-radius: 0 0 5px 5px;
 }
