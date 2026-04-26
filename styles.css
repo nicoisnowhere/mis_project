@@ -21,6 +21,16 @@ header {
   text-align: left;
   border-radius: 5px 5px 0 0;
 }
+
+.collapsible:after {
+  content: '\23F7';
+  float: right;
+}
+
+.active:after {
+  content: "\23F6";
+}
+
 .insideCollapse {
   max-height: 0;
   overflow: hidden;
